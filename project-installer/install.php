@@ -197,7 +197,7 @@ function is_argument_valid($argc, $source_path, $target_path, $usage) {
 /************************ Entrance ***************************/
 
 $USAGE = <<<USAGE
-    {$argv[0]} source_path target_path\n 
+    Usage: {$argv[0]} source_path target_path\n 
 USAGE;
 
 $source_path = $argv[1];
@@ -207,7 +207,7 @@ if ($err_msg) {
     die($err_msg);
 }
 
-$valid_extensions = array('php', 'twig', 'xml', 'css', 'jpg', 'jpeg', 'js', 'png', 'gif');
+$valid_extensions = array('php', 'twig', 'xml', 'yml', 'css', 'jpg', 'jpeg', 'js', 'png', 'gif', 'xsd');
 $obj = new Install($source_path, $target_path, $valid_extensions);
 $obj->run();
 
