@@ -5,7 +5,7 @@
 
 /**
  * 目录文件拷贝工具，适用于代码发布，例如从开发目录发布到测试目录，方便开发
- * /
+ */
 class SourceFilter extends RecursiveFilterIterator 
 {
     private $_valid_extensions;
